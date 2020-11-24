@@ -9,7 +9,6 @@ const Wrapper = styled.div`
 
   @media (min-width: ${({ theme }) => theme.mediaSize.md}) {
     padding-top: 7.2rem;
-    justify-content: flex-start;
   }
 
   @media (min-width: ${({ theme }) => theme.mediaSize.lg}) {
@@ -18,6 +17,7 @@ const Wrapper = styled.div`
 `;
 
 const Logo = styled.img`
+  display: block;
   width: 15.5rem;
   height: 3rem;
 `;
