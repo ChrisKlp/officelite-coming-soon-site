@@ -104,13 +104,13 @@ const FeaturesWrapper = styled.ul`
 
 const PriceCard = ({ name, price, conditions, features, accent }) => {
   const buttonType = accent ? (
-    <Button to="/sign-up" as={Link} white="true">
-      Try for Free
-    </Button>
+    <Link to="/sign-up">
+      <Button white>Try for Free</Button>
+    </Link>
   ) : (
-    <Button to="/sign-up" as={Link} secondary="true">
-      Try for Free
-    </Button>
+    <Link to="/sign-up">
+      <Button secondary>Try for Free</Button>
+    </Link>
   );
 
   return (
