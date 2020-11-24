@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 import { rgba } from 'polished';
 
-const Button = styled.button.attrs(({ size }) => ({
+const StyledButton = styled.button.attrs(({ size }) => ({
   size: size || '17.1rem',
 }))`
   padding: 1.4rem 0;
@@ -55,5 +55,11 @@ const Button = styled.button.attrs(({ size }) => ({
       }
     `};
 `;
+
+const Button = ({...props}) => (
+  <>
+    <StyledButton {...props} />
+  </>
+);
 
 export default Button;
