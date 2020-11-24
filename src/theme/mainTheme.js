@@ -3,7 +3,7 @@ export const theme = {
   colorPrimaryAlt: 'hsl(228, 100%, 75%)',
   colorSecondary: 'hsl(228, 22%, 26%)',
   colorSecondaryAlt: 'hsl(229, 22%, 19%)',
-  colorBackground: 'hsl(0, 0%, 95%)',
+  colorBackground: 'hsl(0, 0%, 98%)',
   colorWhite: 'hsl(0, 0%, 100%)',
   colorText: 'hsl(227, 13%, 52%)',
   colorError: 'hsl(0, 83%, 65%)',
