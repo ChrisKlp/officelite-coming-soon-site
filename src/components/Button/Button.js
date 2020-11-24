@@ -1,7 +1,7 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { rgba } from 'polished';
 
-const StyledButton = styled.button.attrs(({ size }) => ({
+const Button = styled.button.attrs(({ size }) => ({
   size: size || '17.1rem',
 }))`
   padding: 1.4rem 0;
@@ -23,43 +23,33 @@ const StyledButton = styled.button.attrs(({ size }) => ({
   :hover {
     background-color: ${({ theme }) => theme.colorPrimaryAlt};
   }
-
-  ${({ secondary }) =>
-    secondary &&
-    css`
-      color: ${({ theme }) => theme.colorPrimary};
-      background-color: ${({ theme }) => rgba(theme.colorPrimary, 0.15)};
-
-      :hover {
-        background-color: ${({ theme }) => rgba(theme.colorPrimary, 0.25)};
-      }
-
-      :focus {
-        background-color: ${({ theme }) => rgba(theme.colorPrimary, 0.2)};
-      }
-    `};
-
-  ${({ white }) =>
-    white &&
-    css`
-      color: ${({ theme }) => theme.colorPrimary};
-      background-color: ${({ theme }) => theme.colorWhite};
-
-      :hover {
-        color: ${({ theme }) => theme.colorPrimaryAlt};
-        background-color: ${({ theme }) => theme.colorWhite};
-      }
-
-      :focus {
-        background-color: ${({ theme }) => rgba(theme.colorPrimary, 0.05)};
-      }
-    `};
 `;
 
-const Button = ({...props}) => (
-  <>
-    <StyledButton {...props} />
-  </>
-);
+export const ButtonSecondary = styled(Button)`
+  color: ${({ theme }) => theme.colorPrimary};
+  background-color: ${({ theme }) => rgba(theme.colorPrimary, 0.15)};
+
+  :hover {
+    background-color: ${({ theme }) => rgba(theme.colorPrimary, 0.25)};
+  }
+
+  :focus {
+    background-color: ${({ theme }) => rgba(theme.colorPrimary, 0.2)};
+  }
+`;
+
+export const ButtonWhite = styled(Button)`
+  color: ${({ theme }) => theme.colorPrimary};
+  background-color: ${({ theme }) => theme.colorWhite};
+
+  :hover {
+    color: ${({ theme }) => theme.colorPrimaryAlt};
+    background-color: ${({ theme }) => theme.colorWhite};
+  }
+
+  :focus {
+    background-color: ${({ theme }) => rgba(theme.colorPrimary, 0.05)};
+  }
+`;
 
 export default Button;

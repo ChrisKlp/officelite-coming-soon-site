@@ -1,5 +1,5 @@
 import bgPatternPricing from 'assets/home/bg-pattern-pricing.svg';
-import Button from 'components/Button/Button';
+import { ButtonWhite, ButtonSecondary } from 'components/Button/Button';
 import { Link } from 'react-router-dom';
 import styled, { css } from 'styled-components';
 
@@ -104,13 +104,13 @@ const FeaturesWrapper = styled.ul`
 
 const PriceCard = ({ name, price, conditions, features, accent }) => {
   const buttonType = accent ? (
-    <Button to="/sign-up" as={Link} white="white">
+    <ButtonWhite to="/sign-up" as={Link}>
       Try for Free
-    </Button>
+    </ButtonWhite>
   ) : (
-    <Button to="/sign-up" as={Link} secondary="secondary">
+    <ButtonSecondary to="/sign-up" as={Link}>
       Try for Free
-    </Button>
+    </ButtonSecondary>
   );
 
   return (
