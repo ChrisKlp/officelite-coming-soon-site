@@ -1,0 +1,25 @@
+export const theme = {
+  colorPrimary: 'hsl(228, 100%, 66%)',
+  colorPrimaryAlt: 'hsl(228, 100%, 75%)',
+  colorSecondary: 'hsl(228, 22%, 26%)',
+  colorSecondaryAlt: 'hsl(229, 22%, 19%)',
+  colorBackground: 'hsl(0, 0%, 95%)',
+  colorWhite: 'hsl(0, 0%, 100%)',
+  colorText: 'hsl(227, 13%, 52%)',
+  colorError: 'hsl(0, 83%, 65%)',
+  colorFocusBorder: 'hsla(228, 100%, 66%)',
+  fontSize: {
+    xs: '1.2rem',
+    s: '1.6rem',
+    m: '1.8rem',
+    l: '2.0rem',
+    xl: '3.2rem',
+    xxl: '5.6rem',
+  },
+  mediaSize: {
+    s: '576px',
+    md: '768px',
+    lg: '992px',
+    xlg: '1200px',
+  },
+};
