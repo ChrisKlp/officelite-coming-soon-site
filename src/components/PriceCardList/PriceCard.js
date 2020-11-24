@@ -102,14 +102,17 @@ const FeaturesWrapper = styled.ul`
   }
 `;
 
+const ButtonWhite = styled(Button).attrs({ white: true })``;
+const ButtonSecondary = styled(Button).attrs({ secondary: true })``;
+
 const PriceCard = ({ name, price, conditions, features, accent }) => {
   const buttonType = accent ? (
-    <Link to="/sign-up">
-      <Button white>Try for Free</Button>
+    <Link to="/sign-up" component={ButtonWhite}>
+      Try for Free
     </Link>
   ) : (
-    <Link to="/sign-up">
-      <Button secondary>Try for Free</Button>
+    <Link to="/sign-up" component={ButtonSecondary}>
+      Try for Free
     </Link>
   );
 
